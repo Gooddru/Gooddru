@@ -12,6 +12,7 @@ Student at ITMO University. Passionate about Python, Go, and Machine Learning. �
 
 - **Telegram (preferred):** [@Gooddru](https://t.me/gooddru)
 - **Email:** [trollbabich1@mail.ru](mailto:trollbabich1@mail.ru)
+- **Second Email:** [твой_второй_email@example.com](mailto:altx2005@gmail.com)
 - **VK:** [@niggggadie](https://vk.ru/niggggadie)
 
 ## 💻 Languages and tools:
@@ -25,9 +26,9 @@ Student at ITMO University. Passionate about Python, Go, and Machine Learning. �
 
 ## 📊 Stats
 
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=Sanchell1o&show_icons=true&theme=tokyonight)
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=Gooddru&show_icons=true&theme=tokyonight)
 
-![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Sanchell1o&layout=compact&theme=tokyonight)
+![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Gooddru&layout=compact&theme=tokyonight)
 
 <!--START_SECTION:SHOW_LANGUAGE-->
 <!--END_SECTION:SHOW_LANGUAGE-->
