@@ -4,31 +4,25 @@ Student at ITMO University. Passionate about Python, Go, and Machine Learning. �
 
 ## 🛠 Skills
 
-- **💻 Languages:** Python, C++, C#, Go
-- **🐳 Containers & Tools:** Docker
-- **🗄 Databases:** PostgreSQL
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 ## 📬 Contact me
 
 - **Telegram (preferred):** [@Gooddru](https://t.me/gooddru)
 - **Email:** [trollbabich1@mail.ru](mailto:trollbabich1@mail.ru)
-- **Second Email:** [твой_второй_email@example.com](mailto:altx2005@gmail.com)
+- **Second Email:** [твой_второй_email@example.com](mailto:твой_второй_email@example.com)
 - **VK:** [@niggggadie](https://vk.ru/niggggadie)
-
-## 💻 Languages and tools:
-
-- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) **Python**
-- ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white) **C++**
-- ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white) **C#**
-- ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white) **Go**
-- ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) **Docker**
-- ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white) **PostgreSQL**
 
 ## 📊 Stats
 
-![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=Gooddru&show_icons=true&theme=tokyonight)
+![My GitHub Stats](https://github-readme-stats.vercel.app/api?username=Gooddru&show_icons=true&theme=merko)
 
-![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Gooddru&layout=compact&theme=tokyonight)
+![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Gooddru&layout=compact&theme=merko)
 
 <!--START_SECTION:SHOW_LANGUAGE-->
 <!--END_SECTION:SHOW_LANGUAGE-->
