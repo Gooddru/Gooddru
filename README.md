@@ -19,7 +19,7 @@
 ## 🚀 Projects
 
 * ⌨️ [**TranslateKeyboard**](https://github.com/Gooddru/translatekeyboaard) — A handy utility for on-the-fly text translation and layout correction directly from keyboard input. Speeds up typing and cross-language communication without switching context
-* 
+*  🎭 [**SentimentAnalyzer Web**](https://github.com/Gooddru/Sentiment-analyzer) — A fast web application built with **Python (Streamlit)** and **Hugging Face** to analyze the emotional tone of text in real-time. Dockerized for easy deployment.
 
 ## 📬 Contact me
 
