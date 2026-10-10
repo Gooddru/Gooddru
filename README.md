@@ -17,9 +17,11 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ## 🚀 Projects
-
+* 🕸️ [**AlgoNode**](https://github.com/Gooddru/AlgoNode) — A high-performance microservice engine for solving complex graph theoretical problems (such as cycle detection, critical path calculation, and dynamic routing). Built with a **Go** API gateway for fast request handling, a **Python** worker for heavy algorithmic computations, and **PostgreSQL** for state persistence. Fully Dockerized.
+* 🎭 [**SentimentAnalyzer Web**](https://github.com/Gooddru/Sentiment-analyzer) — A fast web application built with **Python (Streamlit)** and **Hugging Face** to analyze the emotional tone of text in real-time. Dockerized for easy deployment.
 * ⌨️ [**TranslateKeyboard**](https://github.com/Gooddru/translatekeyboaard) — A handy utility for on-the-fly text translation and layout correction directly from keyboard input. Speeds up typing and cross-language communication without switching context
-*  🎭 [**SentimentAnalyzer Web**](https://github.com/Gooddru/Sentiment-analyzer) — A fast web application built with **Python (Streamlit)** and **Hugging Face** to analyze the emotional tone of text in real-time. Dockerized for easy deployment.
+* 🧮 [**CSRMatrix**](https://github.com/Gooddru/CSRMatrix) — A high-performance implementation for manipulating and performing mathematical operations on Compressed Sparse Row (CSR) matrices. Optimized for memory efficiency and speed in linear algebra and graph algorithms.
+
 
 ## 📬 Contact me
 
