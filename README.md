@@ -16,6 +16,11 @@
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
+## 🚀 Projects
+
+* ⌨️ [**TranslateKeyboard**](https://github.com/Gooddru/translatekeyboaard) — A handy utility for on-the-fly text translation and layout correction directly from keyboard input. Speeds up typing and cross-language communication without switching context
+* 
+
 ## 📬 Contact me
 
 - **Telegram (preferred):** [@Gooddru](https://t.me/gooddru)
