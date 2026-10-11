@@ -21,7 +21,6 @@
 </p>
 
 ## 🚀 Projects
-* 👁️ [**VisionStream**](https://github.com/Gooddru/Visionstream) — A real-time computer vision and object tracking microservice. Built with **Python (YOLOv8)** for ML processing, a **Go** gateway for WebSocket streaming, and **Redis** for Pub/Sub message brokering. Allows live tracking from webcam or uploaded video.
 - 🕸️ [**AlgoNode**](https://github.com/Gooddru/AlgoNode) — A high-performance microservice engine for solving complex graph theoretical problems (such as cycle detection, critical path calculation, and dynamic routing). Built with a **Go** API gateway for fast request handling, a **Python** worker for heavy algorithmic computations, and **PostgreSQL** for state persistence. Fully Dockerized.
 - 🎭 [**SentimentAnalyzer Web**](https://github.com/Gooddru/Sentiment-analyzer) — A fast web application built with **Python (Streamlit)** and **Hugging Face** to analyze the emotional tone of text in real-time. Dockerized for easy deployment.
 - ⌨️ [**TranslateKeyboard**](https://github.com/Gooddru/translatekeyboaard) — A handy utility for on-the-fly text translation and layout correction directly from keyboard input. Speeds up typing and cross-language communication without switching context.
