@@ -34,9 +34,10 @@
 
 ## 📊 Stats
 
+
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Gooddru&show_icons=true&theme=merko&hide_border=true" height="165" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Gooddru&layout=compact&theme=merko&hide_border=true" height="165" alt="Language Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Gooddru&theme=merko" height="165" alt="GitHub Stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Gooddru&theme=merko" height="165" alt="Language Stats" />
 </div>
 
 <div align="center">
