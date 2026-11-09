@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0b,50:68b587,100:abd200&height=100&section=header" width="100%" alt="Header Wave" />
+</div>
+
 <h1 align="center">👨‍💻 Aleksandr (@Gooddru)</h1>
 
 <p align="center">
