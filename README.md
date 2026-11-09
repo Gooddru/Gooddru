@@ -1,7 +1,7 @@
 <h1 align="center">👨‍💻 Aleksandr (@Gooddru)</h1>
 
 <p align="center">
-  21-year-old Bachelor's student at ITMO University. Passionate about Python, Go, and Machine Learning. 🚀
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=3000&pause=1000&color=ABD200&center=true&vCenter=true&repeat=false&width=950&lines=21-year-old+Bachelor's+student+at+ITMO+University.+Passionate+about+Python%2C+Go%2C+and+Machine+Learning.+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 ## 🛠 Skills
@@ -45,10 +45,6 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </p>
 
-<p align="center">
-  <img src="./profile-summary-card-output/merko/snake.svg" alt="github-snake" />
-</p>
-
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
@@ -59,6 +55,7 @@
   </a>
 </p>
 
+<!-- Анимированная волна внизу профиля -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0b,50:68b587,100:abd200&height=100&section=footer" width="100%" alt="Footer Wave" />
 </p>
