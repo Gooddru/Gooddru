@@ -1,14 +1,14 @@
-name: Update Profile Readme, Stats & Snake
+name: Update Profile Readme & Stats
 
 on:
   schedule:
-    
+  
     - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: 
 
 jobs:
   update-readme:
-    name: Update Stats, Snake & WakaTime
+    name: Update Stats & WakaTime
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -23,22 +23,6 @@ jobs:
         with:
           USERNAME: Gooddru
           THEME: merko
-
-      - name: Generate GitHub Contribution Snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: Gooddru
-          outputs: |
-            profile-summary-card-output/merko/snake.svg?palette=github-dark
-
-      - name: Commit & Push Generated SVGs
-        run: |
-          git pull --rebase
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-summary-card-output/
-          git diff --staged --quiet || git commit -m "chore: update stats cards and snake animation"
-          git push
 
       - name: Update Readme with WakaTime
         uses: anmol098/waka-readme-stats@master
