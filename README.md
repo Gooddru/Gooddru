@@ -44,14 +44,8 @@
   <img src="https://streak-stats.demolab.com?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </div>
 
-<!--START_SECTION:SHOW_LANGUAGE-->
-<!--END_SECTION:SHOW_LANGUAGE-->
-
-<!--START_SECTION:SHOW_EDITORS-->
-<!--END_SECTION:SHOW_EDITORS-->
-
-<!--START_SECTION:SHOW_PROJECTS-->
-<!--END_SECTION:SHOW_PROJECTS-->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <div align="center">
   <br>
