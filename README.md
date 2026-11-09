@@ -45,16 +45,11 @@
   <img src="https://nirzak-streak-stats.vercel.app/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </p>
 
-<!--START_SECTION:SHOW_LANGUAGE-->
-<!--END_SECTION:SHOW_LANGUAGE-->
-
-<!--START_SECTION:SHOW_EDITORS-->
-<!--END_SECTION:SHOW_EDITORS-->
-
-<!--START_SECTION:SHOW_PROJECTS-->
-<!--END_SECTION:SHOW_PROJECTS-->
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 <p align="center">
+  <br>
   <a href="https://wakatime.com/@018b8259-0f6e-434e-bd17-7042c3d58f70">
     <img src="https://wakatime.com/badge/user/018b8259-0f6e-434e-bd17-7042c3d58f70.svg?color=8bca5a" alt="wakatime" />
   </a>
