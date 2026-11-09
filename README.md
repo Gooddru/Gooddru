@@ -37,42 +37,15 @@
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Gooddru&theme=merko" height="165" alt="GitHub Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Gooddru&theme=merko&exclude=" height="165" alt="Language Stats" />
+  <img src="./profile-summary-card-output/merko/3-stats.svg" height="165" alt="GitHub Stats" />
+  <img src="./profile-summary-card-output/merko/2-most-commit-language.svg" height="165" alt="Language Stats" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
+  <img src="./profile-summary-card-output/merko/streak.svg" height="165" alt="GitHub Streak" />
 </p>
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-372%20hrs%2024%20mins-blue?style=flat)
-
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-No Activity Tracked This Week
-
-🔥 Editors: 
-No Activity Tracked This Week
-
-🐱‍💻 Projects: 
-No Activity Tracked This Week
-```
-
-🤖 **AI Coding This Week** 
-
-```text
-No AI Coding Activity Tracked This Week
-```
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/Gooddru/Gooddru/main/assets/bar_graph.png)
-
-
- Last Updated on 09/11/2026 00:19:34 UTC
 <!--END_SECTION:waka-->
 
 <p align="center">
