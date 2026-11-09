@@ -42,7 +42,7 @@
 </p>
 
 <p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </p>
 
 <!--START_SECTION:waka-->
