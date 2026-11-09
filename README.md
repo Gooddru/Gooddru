@@ -1,7 +1,7 @@
 <h1 align="center">👨‍💻 Aleksandr (@Gooddru)</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=15&duration=3000&pause=1000&color=ABD200&center=true&vCenter=true&repeat=false&width=850&lines=21-year-old+Bachelor's+student+at+ITMO+University.+Passionate+about+Python%2C+Go%2C+and+Machine+Learning.+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=17&duration=1800&pause=500&color=ABD200&center=true&vCenter=true&multiline=true&repeat=false&width=650&height=65&lines=21-year-old+Bachelor's+student+at+ITMO+University.;Passionate+about+Python%2C+Go%2C+and+Machine+Learning.+%F0%9F%9A%80" alt="Typing SVG" />
 </p>
 
 ## 🛠 Skills
