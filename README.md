@@ -49,36 +49,6 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </p>
 
-<!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-372%20hrs%2024%20mins-blue?style=flat)
-
-📊 **This Week I Spent My Time On** 
-
-```text
-💬 Programming Languages: 
-SQL                      1 hr 17 mins        █████████████████████████   100.00 % 
-
-🔥 Editors: 
-DataGrip                 1 hr 17 mins        █████████████████████████   100.00 % 
-
-🐱‍💻 Projects: 
-default                  1 hr 17 mins        █████████████████████████   100.00 % 
-```
-
-🤖 **AI Coding This Week** 
-
-```text
-No AI Coding Activity Tracked This Week
-```
-
-**Timeline**
-
-![Lines of Code chart](https://raw.githubusercontent.com/Gooddru/Gooddru/main/assets/bar_graph.png)
-
-
- Last Updated on 09/11/2026 00:43:53 UTC
-<!--END_SECTION:waka-->
-
 <p align="center">
   <br>
   <a href="https://wakatime.com/@018b8259-0f6e-434e-bd17-7042c3d58f70">
