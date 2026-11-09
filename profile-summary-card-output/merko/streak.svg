@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="165" viewBox="0 0 495 165" fill="none">
+  <style>
+    .stat { font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #b7d364; }
+    .label { font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #abd200; }
+    .date { font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #68b587; }
+  </style>
+  <rect width="495" height="165" rx="6" fill="#0a0f0b"/>
+  <line x1="165" y1="28" x2="165" y2="137" stroke="#1f2d23" stroke-width="1.5"/>
+  <line x1="330" y1="28" x2="330" y2="137" stroke="#1f2d23" stroke-width="1.5"/>
+
+  <!-- Total Contributions -->
+  <g transform="translate(82.5, 0)">
+    <text x="0" y="65" class="stat" text-anchor="middle">315</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
+    <text x="0" y="122" class="date" text-anchor="middle">Sep 05, 2023 - Present</text>
+  </g>
+
+  <!-- Current Streak -->
+  <g transform="translate(247.5, 0)">
+    <circle cx="0" cy="55" r="32" stroke="#abd200" stroke-width="3.5" fill="none"/>
+    <path d="M0 13 C4 19 8 23 3 30 C-1 26 -3 21 0 13 Z" fill="#abd200"/>
+    <text x="0" y="65" class="stat" text-anchor="middle">2</text>
+    <text x="0" y="108" class="label" text-anchor="middle">Current Streak</text>
+    <text x="0" y="128" class="date" text-anchor="middle">Nov 08 - Nov 09</text>
+  </g>
+
+  <!-- Longest Streak -->
+  <g transform="translate(412.5, 0)">
+    <text x="0" y="65" class="stat" text-anchor="middle">3</text>
+    <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
+    <text x="0" y="122" class="date" text-anchor="middle">Jul 08, 2025 - Jul 10, 2025</text>
+  </g>
+</svg>
