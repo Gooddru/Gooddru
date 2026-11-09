@@ -1,18 +1,45 @@
-name: Waka Readme & Snake Animation
+name: Update Profile Readme, Stats & Snake
 
 on:
   schedule:
+    
     - cron: '0 0 * * *'
-  workflow_dispatch: 
+  workflow_dispatch:
 
 jobs:
   update-readme:
-    name: Update WakaTime & Snake
+    name: Update Stats, Snake & WakaTime
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
-      
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          USERNAME: Gooddru
+          THEME: merko
+
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Gooddru
+          outputs: |
+            profile-summary-card-output/merko/snake.svg?palette=github-dark
+
+      - name: Commit & Push Generated SVGs
+        run: |
+          git pull --rebase
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output/
+          git diff --staged --quiet || git commit -m "chore: update stats cards and snake animation"
+          git push
+
       - name: Update Readme with WakaTime
         uses: anmol098/waka-readme-stats@master
         with:
@@ -29,19 +56,3 @@ jobs:
           SHOW_SHORT_INFO: "False"
           SHOW_DAYS_OF_WEEK: "False"
           SHOW_PROFILE_VIEWS: "False"
-
-      - name: Generate GitHub Contribution Snake
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: Gooddru
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-
-      - name: Push Snake Animation to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
