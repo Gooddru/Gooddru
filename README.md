@@ -1,13 +1,8 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0b,50:68b587,100:abd200&height=180&section=header&text=Aleksandr%20(@Gooddru)&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=35" width="100%" alt="Header" />
-</div>
+<h1 align="center">👨‍💻 Aleksandr (@Gooddru)</h1>
 
-<h3 align="center">
-  👨‍💻 21-year-old Bachelor's student at ITMO University.<br>
-  Passionate about Python, Go, and Machine Learning. 🚀
-</h3>
-
----
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&duration=2000&pause=500&color=ABD200&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=60&lines=21-year-old+Bachelor's+student+at+ITMO+University.;Passionate+about+Python%2C+Go%2C+and+Machine+Learning." alt="Typing SVG" />
+</p>
 
 ## 🛠 Skills
 
