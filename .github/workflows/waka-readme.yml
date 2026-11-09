@@ -1,17 +1,185 @@
-name: Waka Readme
+name: Update Profile Readme & Stats
 
 on:
   schedule:
-   
+    
     - cron: '0 0 * * *'
   workflow_dispatch: 
 
 jobs:
   update-readme:
-    name: Update Readme with Metrics
+    name: Update WakaTime & All SVG Cards
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: anmol098/waka-readme-stats@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Profile Summary Cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          USERNAME: Gooddru
+          THEME: merko
+
+      - name: Generate Autonomous GitHub Streak SVG
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          USERNAME: Gooddru
+        run: |
+          python3 - << 'EOF'
+          import os, json, urllib.request
+          from datetime import datetime, date
+
+          token = os.environ.get("GH_TOKEN")
+          user = os.environ.get("USERNAME", "Gooddru")
+
+          def gql(query, variables):
+              req = urllib.request.Request(
+                  "https://api.github.com/graphql",
+                  data=json.dumps({"query": query, "variables": variables}).encode("utf-8"),
+                  headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+              )
+              with urllib.request.urlopen(req) as resp:
+                  return json.loads(resp.read().decode("utf-8"))
+
+          # Получаем дату создания аккаунта и список всех лет активности
+          q_years = """
+          query($login: String!) {
+            user(login: $login) {
+              createdAt
+              contributionsCollection { contributionYears }
+            }
+          }
+          """
+          res_years = gql(q_years, {"login": user})
+          user_data = res_years["data"]["user"]
+          created_at = user_data["createdAt"][:10]
+          years = sorted(user_data["contributionsCollection"]["contributionYears"])
+
+          days = {}
+          q_cal = """
+          query($login: String!, $from: DateTime!, $to: DateTime!) {
+            user(login: $login) {
+              contributionsCollection(from: $from, to: $to) {
+                contributionCalendar {
+                  weeks {
+                    contributionDays {
+                      date
+                      contributionCount
+                    }
+                  }
+                }
+              }
+            }
+          }
+          """
+          for y in years:
+              res_cal = gql(q_cal, {"login": user, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"})
+              weeks = res_cal["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+              for w in weeks:
+                  for d in w["contributionDays"]:
+                      days[d["date"]] = d["contributionCount"]
+
+          today_str = datetime.utcnow().strftime("%Y-%m-%d")
+          sorted_dates = sorted(d for d in days.keys() if created_at <= d <= today_str)
+
+          total_contribs = sum(days[d] for d in sorted_dates)
+
+          # Подсчёт самого длинного и текущего стрика
+          longest_streak = 0
+          longest_start, longest_end = None, None
+          cur_s = 0
+          cur_start = None
+
+          for d in sorted_dates:
+              c = days[d]
+              if c > 0:
+                  if cur_s == 0:
+                      cur_start = d
+                  cur_s += 1
+                  if cur_s >= longest_streak:
+                      longest_streak = cur_s
+                      longest_start = cur_start
+                      longest_end = d
+              else:
+                  cur_s = 0
+
+          # Проверяем текущий стрик (учитываем, что сегодня коммитов может ещё не быть)
+          current_streak = 0
+          curr_start_date, curr_end_date = None, None
+          check_dates = list(reversed(sorted_dates))
+          if check_dates and days[check_dates[0]] == 0:
+              check_dates = check_dates[1:]
+
+          for d in check_dates:
+              if days[d] > 0:
+                  if current_streak == 0:
+                      curr_end_date = d
+                  current_streak += 1
+                  curr_start_date = d
+              else:
+                  break
+
+          def fmt_date(d_str, include_year=True):
+              if not d_str:
+                  return "N/A"
+              dt = datetime.strptime(d_str, "%Y-%m-%d")
+              return dt.strftime("%b %d, %Y") if include_year else dt.strftime("%b %d")
+
+          created_fmt = f"{fmt_date(created_at)} - Present"
+          curr_range = fmt_date(today_str, False) if current_streak == 0 else f"{fmt_date(curr_start_date, False)} - {fmt_date(curr_end_date, False)}"
+          long_range = "No streak" if longest_streak == 0 else f"{fmt_date(longest_start)} - {fmt_date(longest_end)}"
+
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="495" height="165" viewBox="0 0 495 165" fill="none">
+            <style>
+              .stat {{ font: 700 28px 'Segoe UI', Ubuntu, Sans-Serif; fill: #b7d364; }}
+              .label {{ font: 600 13px 'Segoe UI', Ubuntu, Sans-Serif; fill: #abd200; }}
+              .date {{ font: 400 11px 'Segoe UI', Ubuntu, Sans-Serif; fill: #68b587; }}
+            </style>
+            <rect width="495" height="165" rx="6" fill="#0a0f0b"/>
+            <line x1="165" y1="28" x2="165" y2="137" stroke="#1f2d23" stroke-width="1.5"/>
+            <line x1="330" y1="28" x2="330" y2="137" stroke="#1f2d23" stroke-width="1.5"/>
+
+            <!-- Total Contributions -->
+            <g transform="translate(82.5, 0)">
+              <text x="0" y="65" class="stat" text-anchor="middle">{total_contribs:,}</text>
+              <text x="0" y="98" class="label" text-anchor="middle">Total Contributions</text>
+              <text x="0" y="122" class="date" text-anchor="middle">{created_fmt}</text>
+            </g>
+
+            <!-- Current Streak -->
+            <g transform="translate(247.5, 0)">
+              <circle cx="0" cy="55" r="32" stroke="#abd200" stroke-width="3.5" fill="none"/>
+              <path d="M0 13 C4 19 8 23 3 30 C-1 26 -3 21 0 13 Z" fill="#abd200"/>
+              <text x="0" y="65" class="stat" text-anchor="middle">{current_streak}</text>
+              <text x="0" y="108" class="label" text-anchor="middle">Current Streak</text>
+              <text x="0" y="128" class="date" text-anchor="middle">{curr_range}</text>
+            </g>
+
+            <!-- Longest Streak -->
+            <g transform="translate(412.5, 0)">
+              <text x="0" y="65" class="stat" text-anchor="middle">{longest_streak}</text>
+              <text x="0" y="98" class="label" text-anchor="middle">Longest Streak</text>
+              <text x="0" y="122" class="date" text-anchor="middle">{long_range}</text>
+            </g>
+          </svg>'''
+
+          os.makedirs("profile-summary-card-output/merko", exist_ok=True)
+          with open("profile-summary-card-output/merko/streak.svg", "w", encoding="utf-8") as f:
+              f.write(svg)
+          EOF
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-summary-card-output/merko/streak.svg
+          git diff --staged --quiet || git commit -m "chore: update autonomous streak.svg"
+          git push
+
+      - name: Update Readme with WakaTime
+        uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
