@@ -1,7 +1,7 @@
 <h1 align="center">👨‍💻 Aleksandr (@Gooddru)</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=ABD200&center=true&vCenter=true&width=600&lines=21-year-old+Bachelor's+student+at+ITMO+%F0%9F%8E%93;Passionate+about+Python%2C+Go+%26+ML+%F0%9F%9A%80;High-Performance+Backend+%26+Algorithms+%E2%9A%A1" alt="Typing SVG" />
+  21-year-old Bachelor's student at ITMO University. Passionate about Python, Go, and Machine Learning. 🚀
 </p>
 
 ## 🛠 Skills
@@ -37,21 +37,16 @@
 ## 📊 Stats
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Gooddru&theme=merko" height="165" alt="GitHub Stats" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Gooddru&theme=merko&exclude=" height="165" alt="Language Stats" />
+  <img src="./profile-summary-card-output/merko/3-stats.svg" height="165" alt="GitHub Stats" />
+  <img src="./profile-summary-card-output/merko/2-most-commit-language.svg" height="165" alt="Language Stats" />
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Gooddru&theme=merko&hide_border=true" height="165" alt="GitHub Streak" />
 </p>
 
-<!-- Анимированная змейка по вашим коммитам -->
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Gooddru/Gooddru/output/github-contribution-grid-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Gooddru/Gooddru/output/github-contribution-grid-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/Gooddru/Gooddru/output/github-contribution-grid-snake-dark.svg" />
-  </picture>
+  <img src="./profile-summary-card-output/merko/snake.svg" alt="github-snake" />
 </p>
 
 <!--START_SECTION:waka-->
@@ -64,7 +59,6 @@
   </a>
 </p>
 
-<!-- Анимированная волна внизу профиля -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0b,50:68b587,100:abd200&height=100&section=footer" width="100%" alt="Footer Wave" />
 </p>
